@@ -1,0 +1,257 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 "Montserrat", sans-serif;
+}
+
+body {
+    font: inherit;
+}
+
+h1 { font-size: 2.15em;}
+h2 { font-size: 2.0em;}
+h3 { font-size: 1.8em;}
+h4 { font-size: 1.4em;}
+h5 { font-size: 1.2em;}
+h6 { font-size: 1em;}
+
+.header {
+    display: flex;
+    background-color: #000;
+    justify-content: space-between;
+    padding: 0 1em 0 1em;
+    align-items: center;
+}
+
+.header img {
+    padding: 0.2em;
+    max-height: 50px;
+}
+
+.header .navigation {
+    display: flex;
+    gap: 2em;
+}
+
+.header a {
+    font: 14px/1.5 "Lato", sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* plans section */
+.plans-section {
+    background: linear-gradient(#1db954 50%, #fff 50%);
+    height: 670px;
+    position: relative;
+}
+
+.plans-section::before {
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: -5px;
+    width: 700px;
+    height: 500px;
+    background-image: url('images/music.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+}
+
+.plans-section h1, .plan-container {
+    position: relative;
+    z-index: 1;
+}
+
+.plans-section h1 {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em 0 0 0;
+}
+
+.plan-container {
+    display: flex;
+    gap: 14em;
+    justify-content: center;
+    margin: 2em 6em 6em 6em;
+}
+
+.plan-container .plan {
+    background-color: white;
+    border: 1px solid #54546D;
+    border-radius: 1em;
+    height: 500px;
+    width: 525px;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plan-container .plan h1, p {
+    color: #54546D;
+}
+
+.plan-container .plan button {
+    width: 350px;
+    padding: 1em;
+    margin: 0 auto;
+    border: none;
+    border-radius: 2em;
+    color: white;
+    background-color: #1DB954;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.plan-container .plan .info {
+    padding: 0 3em 0 3em;
+    font-size: 17px;
+}
+
+.plan-container .plan .info ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.plan-container .plan .prices {
+    background-color: #191414;
+    border-radius: 0 0 0.8em 0.8em;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.plan-container .plan .prices p {
+    color: white;
+    font: 20px/1.5 "Lato", sans-serif;
+}
+
+.plan-container .plan .prices p:nth-of-type(2) {
+    border-left: 1px solid white;
+    padding-left: 2em;
+}
+
+
+/*info section*/
+
+.info-section {
+    display: flex;
+    padding: 2em 6em;
+    gap: 3em;
+    max-height: 360px;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-section .text {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: space-between;
+    flex-grow: 2;
+    max-width: 70%;
+}
+
+.info-section .text h1 {
+    font-size: 1.86em;
+}
+
+.info-section .text p {
+    font: 19px/1.5 "Lato", sans-serif;
+}
+
+.info-section .dogopal {
+    max-width: 30%;
+    height: auto;
+}
+
+
+/* table section */
+.table-section {
+    border: 1px solid #000;
+    margin-top: 2em;
+    overflow: hidden;
+    padding: 0 3em 0 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.table-section .text h1, p{
+    margin-bottom: 0.5em;
+}
+
+.table-section .text h1{
+    font-size: 2.86em;
+}
+
+.table {
+    margin: 2em 0 5em 0;
+    width: 1200px;
+    height: 300px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+
+.table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.table tr:nth-child(odd) {
+    background-color: #CCCBCB;
+}
+
+.table tr:nth-child(even) {
+    background-color: #81D8A0;
+}
+
+.table img {
+    max-width: 30px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 15%;
+}
+
+.table td:first-child {
+    width: 70%;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: #191414;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+    margin: 0;
+    padding: 1.5em;
+}

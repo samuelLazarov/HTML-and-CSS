@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 17.5px/1.5 "Gochi Hand", sans-serif;
+}
+
+body {
+    font: inherit;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #E0E0E0;
+}
+
+.postcard {
+    background-color: white;
+    width: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.background {
+    background: url(images/nature.jpg) no-repeat center;
+    margin: 2em;
+    border-radius: 1em;
+    background-size: 950px auto;
+    background-repeat: no-repeat;
+}
+
+.image-container {
+    position: relative;
+    padding: 20px;
+    padding-bottom: 0;
+    padding: 15px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+}
+
+.message {
+    position: absolute;
+    text-align: center;
+    top: 363px;
+    left: 49px;
+    right: 49px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.message h1 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333333;
+}
+
+.message p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+    color: #746866;
+}
+
+.address p{
+    margin-left: 30px;
+    color: #746866;
+    font-size: 18px;
+}
+
+.address p:first-child {
+    font-size: 25px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.address {
+    padding: 1em;
+    background-color: #F4F4F4;
+    border-top: 1px solid #ddd;
+}

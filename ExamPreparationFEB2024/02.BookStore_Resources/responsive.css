@@ -1,0 +1,157 @@
+/* Responsive Styles */
+
+/* General responsive adjustments */
+body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Hide Navbar on small screens */
+  @media (max-width: 600px) {
+    .home-navbar {
+      display: none;
+    }
+  }
+  
+  /* Main content adjustments */
+  @media (max-width: 600px) {
+    .home-main {
+      padding: 0 15px;
+    }
+  
+    .home-cards-container {
+      flex-direction: column;
+      align-items: center;
+      grid-gap: 16px;
+    }
+  
+    .category-card-category-card {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+  
+    .category-card-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  
+    .blog-post-card-blog-post-card {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Full width banner adjustments */
+  @media (max-width: 600px) {
+    .home-full-width-banner {
+      flex-direction: column;
+      padding: 15px;
+    }
+  
+    .home-left4,
+    .home-image6 {
+      width: 100%;
+    }
+  
+    .home-image6 {
+      margin-top: 15px;
+    }
+  }
+  
+  /* Blog post card adjustments */
+  @media (max-width: 600px) {
+    .home-container08 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .blog-post-card-blog-post-card {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .blog-post-card-container {
+      padding: 16px;
+    }
+  }
+  
+  /* Footer adjustments */
+  @media (max-width: 600px) {
+    .home-footer1 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .home-links-container {
+      flex-direction: column;
+      align-items: center;
+      grid-gap: 20px;
+    }
+  
+    .home-container10,
+    .home-container12 {
+      margin-right: 0;
+      align-items: center;
+    }
+  
+    .home-text33,
+    .home-text36,
+    .home-text37 {
+      text-align: center;
+    }
+  }
+  
+  /* Section heading adjustments */
+  @media (max-width: 600px) {
+    .section-heading-section-heading {
+      margin-bottom: 20px;
+    }
+  
+    .section-heading-text {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .section-heading-text1 {
+      font-size: 14px;
+    }
+  }
+  
+  /* Additional specific adjustments */
+  @media (max-width: 600px) {
+    .home-container07 {
+      margin-top: 40px;
+      padding: 0 15px;
+    }
+  
+    .home-text23 {
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+  
+    .home-content {
+      margin: 0;
+      padding: 0 15px;
+    }
+  
+    .home-text29 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+  
+    .home-text30 {
+      font-size: 14px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .home-btn {
+      padding: 10px 20px;
+    }
+  
+    .button {
+      padding: 10px 20px;
+    }
+  }
